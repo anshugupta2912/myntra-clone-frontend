@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Myntra Clone | Online Fashion Shopping</title>
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header">
+    <div class="header-inner">
+
+      <!-- Hamburger button (visible on mobile only) -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Logo -->
+      <a href="index.html" class="logo" aria-label="Home">
+        <span class="logo-mark">M</span>
+      </a>
+
+      <!-- Main navigation -->
+      <nav class="nav" id="nav">
+        <a href="#products" class="nav-link" data-category="men">Men</a>
+        <a href="#products" class="nav-link" data-category="women">Women</a>
+        <a href="#products" class="nav-link" data-category="kids">Kids</a>
+        <a href="#products" class="nav-link" data-category="home">Home &amp; Living</a>
+        <a href="#products" class="nav-link" data-category="beauty">Beauty</a>
+      </nav>
+
+      <!-- Search bar -->
+      <div class="search-box">
+        <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="11" cy="11" r="7"></circle>
+          <line x1="16.5" y1="16.5" x2="21" y2="21"></line>
+        </svg>
+        <input type="text" id="searchInput" placeholder="Search for products, brands and more">
+      </div>
+
+      <!-- Profile / Wishlist / Bag -->
+      <div class="header-actions">
+        <a href="#" class="action">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="8" r="4"></circle>
+            <path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"></path>
+          </svg>
+          <span class="action-label">Profile</span>
+        </a>
+        <a href="#" class="action">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 20s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.5-7 10-7 10z"></path>
+          </svg>
+          <span class="action-label">Wishlist</span>
+        </a>
+        <a href="#" class="action">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 8h14l-1 13H6L5 8z"></path>
+            <path d="M9 8V6a3 3 0 0 1 6 0v2"></path>
+          </svg>
+          <span class="action-label">Bag</span>
+          <span class="bag-count" id="bagCount">0</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO BANNER ================= -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="hero-tag">End of Season Sale</p>
+        <h1 class="hero-title">Flat 40–70% Off</h1>
+        <p class="hero-text">On top fashion brands. New styles added every day.</p>
+        <a href="#products" class="btn btn-primary">Shop Now</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=900&q=80" alt="Woman holding shopping bags">
+      </div>
+    </section>
+
+    <!-- ================= OFFER STRIP ================= -->
+    <section class="offer-strip">
+      <p><strong>Flat ₹200 OFF</strong> on your first order &nbsp;|&nbsp; Use code <strong>NEW200</strong></p>
+    </section>
+
+    <!-- ================= CATEGORIES ================= -->
+    <section class="section">
+      <h2 class="section-title">Shop by Category</h2>
+      <!-- Category cards are rendered by script.js -->
+      <div class="category-grid" id="categoryGrid"></div>
+    </section>
+
+    <!-- ================= PRODUCTS ================= -->
+    <section class="section" id="products">
+      <h2 class="section-title">Trending Now</h2>
+      <!-- Product cards are rendered by script.js -->
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>Myntra-inspired clone built with HTML, CSS &amp; JavaScript — for learning purposes only.</p>
+  </footer>
+
+</body>
+</html>
